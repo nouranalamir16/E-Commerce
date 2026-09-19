@@ -1,0 +1,44 @@
+:root{
+  --main_color: #008080;
+  --p_color: #7b7b7b;
+  --bg_color: #F3F3F3;
+  --white_color: #fff;
+  --color_heading: #253237;
+  --border_color: #d6d6d6d5;
+}
+
+.aboutPage .img{
+    text-align: center;
+}
+.aboutPage img{
+        width: 280px;
+    margin: 35px 0 40px;
+    filter: drop-shadow(0px 10px 20px #00808069);
+}
+.aboutPage h1{
+     background: linear-gradient(to right, #00686869, var(--main_color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+.aboutPage .center{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.aboutPage p{
+    margin: 10px 0;
+}
+.aboutPage h2{
+    margin-top: 25px;
+}
+.aboutPage ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.aboutSection h2{
+    color: var(--main_color);
+}
+.aboutSection li{
+    color: var(--p_color);
+}
