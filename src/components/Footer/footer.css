@@ -1,0 +1,74 @@
+:root{
+  --main_color: #008080;
+  --p_color: #7b7b7b;
+  --bg_color: #F3F3F3;
+  --white_color: #fff;
+  --color_heading: #253237;
+  --border_color: #d6d6d6d5;
+}
+
+.footer {
+  background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+  color: white;
+  padding-top: 50px;
+  margin-top: 50px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 30px;
+  padding: 0 50px;
+}
+
+.footer .col h3,
+.footer .col h4 {
+  margin-bottom: 15px;
+  color: var(--main_color);
+}
+
+.footer .col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .col ul li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: var(--p_color);
+}
+
+.footer .col ul li:hover {
+  color: #4facfe;
+  transform: translateX(5px);
+}
+.footer .icons{
+    margin: 10px 0px;
+}
+.footer .icons svg{
+    color: #008080;
+        margin-right: 10px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.footer .icons svg:hover{
+    transform: scale(1.2);
+}
+.footer .icons .email:hover svg{
+    color: #EA4335;
+}
+.footer .icons .linkedin:hover svg{
+    color: #0A66C2;
+}
+.footer .icons .github:hover svg{
+    color: #FFFFFF;
+}
+.footerBottom {
+  text-align: center;
+  padding: 15px 0;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}

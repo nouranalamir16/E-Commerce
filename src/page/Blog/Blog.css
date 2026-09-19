@@ -1,0 +1,96 @@
+:root{
+  --main_color: #008080;
+  --p_color: #7b7b7b;
+  --bg_color: #F3F3F3;
+  --white_color: #fff;
+  --color_heading: #253237;
+  --border_color: #d6d6d6d5;
+}
+
+.blogHero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, var(--main_color), #4b8ba2);
+  color: white;
+}
+
+.blogHero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.blogHero p {
+  font-size: 18px;
+  color: var(--white_color);
+}
+
+.blogCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.blogCard {
+  width: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.blogCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.blogCard img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.blogCard h3 {
+  margin: 15px 15px 10px 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.blogCard p {
+  margin: 0 15px 15px 15px;
+  font-size: 14px;
+  color: #555;
+  flex-grow: 1;
+}
+
+.blogCard button {
+  margin: 0 15px 15px 15px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, var(--main_color), #00f2fe);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.blogCard button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blogCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blogCard {
+    width: 90%;
+  }
+}
